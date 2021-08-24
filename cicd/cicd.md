@@ -9,7 +9,6 @@
 
 ## Github action trigger deploy  
 ![Component Diagram](images/workflow.png?raw=true)  
-![Component Diagram](images/func.png?raw=true)  
 
 ## Introduce Terraform
 ### What terraform can do?
@@ -35,12 +34,13 @@ https://www.terraform.io/docs/language/values/index.html
 https://www.terraform.io/docs/language/resources/index.html  
 
 
+### Overall pipline
+![Component Diagram](images/func.png?raw=true)  
+
 ### Config environment variables
 * Config credentials: AWS credential, Terraform Token
 * Config ecs related: environment, app name, domain
 * Config ecs container related fields: image ARN, cpu, memory, desired_capacity
 Above three type are configed in action's yml file using "TF_VAR_" prefix
-
-
 * Config application related: BEARER_TOKEN, CMK, LOG_LEVEL, NEW_CLAIMS_SQS_URL, SENTRY_DSN...
 Env variable name is configed in festivus.ecs.locals.secret_vars. Env variable value is stored in SSM.
