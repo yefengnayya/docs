@@ -1,6 +1,6 @@
 ## Requirements
 * Move Festivus from EBS to ECS.
-* Deployment workflow will be triggered when code merged to master branch. (CI/CD)
+* Deployment workflow will be triggered when code merged/push to master branch. (CI/CD)
 
 ## Sub-tasks
 * Create Dockerfile
@@ -9,6 +9,11 @@
 
 ## Github action trigger deploy  
 ![Component Diagram](images/workflow.png?raw=true)  
+
+## Terraform deployment
+Mark create a good example project:  
+https://github.com/Nayya-com/terraform-example  
+
 
 ## Introduce Terraform
 ### What terraform can do?
